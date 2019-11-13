@@ -1,0 +1,12 @@
+<div class="container mx-auto mt-3" style="width: 60%">
+  <h1 style="text-align: center">Review</h1>
+  <div class="p-2" style="margin: 50px; background-color: white); box-shadow: 0px 0px 10px rgba(0,0,0,.2)">
+
+    <%= simple_form_for [@restaurant, @review] do |f| %>
+      <%= f.input :content %>
+      <%= f.submit "add a review", class: "btn btn-primary" %>
+      <%= link_to 'Back', restaurant_path(@restaurant), class: "pl-5" %>
+    <% end %>
+  </div>
+ </div>
+</div>
